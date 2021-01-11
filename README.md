@@ -10,5 +10,5 @@ The SlideSpinnerBuilder class makes it easy to instantiate a SlideSpinner.
 
 Note that there are four different data models created for the SlideSpinner: SlideSpinnerIntegerModel, SlideSpinnerFloatModel, SlideSpinnerExpIntegerModel and SlideSpinnerExpFloatModel.  The integer and float models are as simple as their names imply; just supply and range of numbers for their respective data types.  The exponential models ("Exp") are a little more complicated, as their resulting numbers are exponential instead of linear.  To construct an exponential model, you need to supply the "a" and "b" values for the standard exponential formula. 
 
-SlideSpinnerSlider.java and SlideSpinnerDropFrame.java 
+SlideSpinnerSlider.java and SlideSpinnerSliderFrame.java are implemented from a javax.swing.JDialog.  The JDialog constructor needs a java.awt.Window object passed to it, make sure to use a reference to the JFrame or JDialog hosting the SlideSpinner instance.  Troubleshooting tip: if you click the SlideSpinner dropdown button and nothing happens, the Window object you passed to it is the wrong one.
 
